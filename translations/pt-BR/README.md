@@ -139,12 +139,23 @@ acidentalmente; e resulte em úteis visualizações de diferença.
 .selector-1,
 .selector-2,
 .selector-3 {
+    /* box sizing */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
     color: #333;
     background: #fff;
+
+    /* Corner */
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+
+    /* Gradient */
+    background-image:
+        linear-gradient(#fff, #ccc),
+        linear-gradient(#f3c, #4ec);
 }
 ```
 
@@ -193,9 +204,12 @@ vários formatos que poderiam ser usados; um exemplo é mostrado abaixo.
 
 ```css
 .selector {
+    /* Box Shadow */
     box-shadow:
         1px 1px 1px #000,
         2px 2px 1px 1px #ccc inset;
+
+    /* Gradient */
     background-image:
         linear-gradient(#fff, #ccc),
         linear-gradient(#f3c, #4ec);
